@@ -16,6 +16,13 @@ namespace BooksMVC.Models
             // Add custom user claims here
             return userIdentity;
         }
+        public string Address { get; set; }
+
+        public string LastName { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string RoleName { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
